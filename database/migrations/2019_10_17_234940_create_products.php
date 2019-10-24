@@ -20,7 +20,7 @@ class CreateProducts extends Migration
             $table->bigIncrements('id');
             $table->string('stock');
             $table->double('price');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
